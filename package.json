@@ -1,0 +1,22 @@
+{
+  "name": "zadanie6",
+  "version": "1.0.0",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --grep @ui",
+    "test:api": "playwright test --grep @api",
+    "test:smoke": "playwright test --grep @smoke"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "ISC",
+  "description": "Przykładowy framework Playwright dla umownej aplikacji rezerwacji wizyt",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "typescript": "7.0.2"
+  }
+}
